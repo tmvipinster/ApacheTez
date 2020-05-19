@@ -1,0 +1,59 @@
+<configuration>
+  <property>
+    <name>tez.lib.uris</name>
+    <value>${fs.default.name}/tez/tez.tar.gz</value>
+  </property>
+  <property>
+    <description>Enable Tez to use the Timeline Server for History Logging</description>
+    <name>tez.history.logging.service.class</name>
+    <value>org.apache.tez.dag.history.logging.ats.ATSHistoryLoggingService</value>
+  </property>
+  <property>
+    <description>URL for where the Tez UI is hosted</description>
+    <name>tez.tez-ui.history-url.base</name>
+    <value>http://localhost:9999/tez-ui/</value>
+  </property>
+  <property> 
+    <name>tez.am.resource.memory.mb</name> 
+    <value>256</value> 
+  </property> 
+  <property> 
+    <name>tez.am.grouping.min-size</name> 
+    <value>16777216</value> 
+  </property> 
+  <!-- Client Submission timeout value when submitting DAGs to a session --> 
+  <property> 
+    <name>tez.session.client.timeout.secs</name> 
+    <value>-1</value> 
+  </property> 
+  
+  <property> 
+    <name>tez.am.grouping.split-waves</name> 
+    <value>0.9</value> 
+  </property> 
+
+  <property> 
+    <name>tez.am.container.reuse.enabled</name> 
+    <value>true</value> 
+  </property> 
+  <property> 
+    <name>tez.am.container.reuse.rack-fallback.enabled</name> 
+    <value>true</value> 
+  </property> 
+  <property> 
+    <name>tez.am.container.reuse.non-local-fallback.enabled</name> 
+    <value>true</value> 
+  </property> 
+  <property> 
+    <name>tez.am.container.session.delay-allocation-millis</name> 
+    <value>-1</value> 
+  </property> 
+  <property> 
+    <name>tez.am.container.reuse.locality.delay-allocation-millis</name> 
+    <value>250</value> 
+  </property> 
+  <property>
+  <name>tez.task.resource.memory.mb </name>
+  <value> 256</value>
+ </property>
+</configuration>
