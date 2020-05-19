@@ -1,4 +1,4 @@
-FROM tmvipin/hadoop3.1.x:latest
+FROM tmvipin/hadoop3.1.1:latest
 
 ENV TEZ_TGZ tez-0.9.1.tar.gz
 ENV TEZ_MINIMAL_TGZ tez-0.9.1-minimal.tar.gz
