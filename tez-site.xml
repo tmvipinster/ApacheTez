@@ -13,11 +13,7 @@
     <name>tez.tez-ui.history-url.base</name>
     <value>http://localhost:9999/tez-ui/</value>
   </property>
-  <property> 
-    <name>tez.am.resource.memory.mb</name> 
-    <value>256</value> 
-  </property> 
-  <property> 
+ <property> 
     <name>tez.am.grouping.min-size</name> 
     <value>16777216</value> 
   </property> 
@@ -26,7 +22,10 @@
     <name>tez.session.client.timeout.secs</name> 
     <value>-1</value> 
   </property> 
-  
+   <property> 
+    <name>hive.tez.exec.print.summary</name> 
+    <value>true</value> 
+  </property> 
   <property> 
     <name>tez.am.grouping.split-waves</name> 
     <value>0.9</value> 
@@ -52,8 +51,4 @@
     <name>tez.am.container.reuse.locality.delay-allocation-millis</name> 
     <value>250</value> 
   </property> 
-  <property>
-  <name>tez.task.resource.memory.mb </name>
-  <value> 256</value>
- </property>
 </configuration>
