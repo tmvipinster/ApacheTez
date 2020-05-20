@@ -30,6 +30,10 @@
     <name>tez.session.client.timeout.secs</name> 
     <value>-1</value> 
   </property> 
+  <property> 
+    <name>tez.session.am.dag.submit.timeout.secs</name> 
+    <value>10</value> 
+  </property> 
   <!-- prewarm stuff --> 
   <property> 
     <name>tez.session.pre-warm.enabled</name> 
