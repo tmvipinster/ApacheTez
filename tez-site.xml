@@ -15,7 +15,11 @@
   </property>
   <property> 
     <name>tez.am.resource.memory.mb</name> 
-    <value>256</value> 
+    <value>4096</value> 
+  </property> 
+  <property> 
+    <name>tez.am.java.opts</name> 
+    <value>-server -Xmx7168m -Djava.net.preferIPv4Stack=true</value> 
   </property> 
   <property> 
     <name>tez.am.grouping.min-size</name> 
@@ -26,7 +30,16 @@
     <name>tez.session.client.timeout.secs</name> 
     <value>-1</value> 
   </property> 
-  
+  <!-- prewarm stuff --> 
+  <property> 
+    <name>tez.session.pre-warm.enabled</name> 
+    <value>true</value> 
+  </property> 
+
+  <property> 
+    <name>tez.session.pre-warm.num.containers</name> 
+    <value>10</value> 
+  </property> 
   <property> 
     <name>tez.am.grouping.split-waves</name> 
     <value>0.9</value> 
@@ -54,6 +67,6 @@
   </property> 
   <property>
   <name>tez.task.resource.memory.mb </name>
-  <value> 256</value>
+  <value> 2048 </value>
  </property>
 </configuration>
