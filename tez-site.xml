@@ -15,7 +15,11 @@
   </property>
   <property> 
     <name>tez.am.resource.memory.mb</name> 
-    <value>512</value> 
+    <value>2048</value> 
+  </property>
+    <property> 
+    <name>tez.am.log.level</name> 
+    <value>DEBUG</value> 
   </property> 
   <property> 
     <name>tez.am.grouping.min-size</name> 
@@ -31,21 +35,11 @@
     <value>60</value> 
   </property> 
   <!-- prewarm stuff --> 
-  <property> 
-    <name>tez.session.pre-warm.enabled</name> 
-    <value>true</value> 
-  </property> 
-
-  <property> 
-    <name>tez.session.pre-warm.num.containers</name> 
-    <value>10</value> 
-  </property> 
-  <property> 
+ <property> 
     <name>tez.am.grouping.split-waves</name> 
     <value>0.9</value> 
   </property> 
-
-  <property> 
+ <property> 
     <name>tez.am.container.reuse.enabled</name> 
     <value>true</value> 
   </property> 
@@ -58,15 +52,7 @@
     <value>true</value> 
   </property> 
   <property> 
-    <name>tez.am.container.session.delay-allocation-millis</name> 
-    <value>-1</value> 
-  </property> 
-  <property> 
     <name>tez.am.container.reuse.locality.delay-allocation-millis</name> 
     <value>250</value> 
   </property> 
-  <property>
-  <name>tez.task.resource.memory.mb </name>
-  <value> 256 </value>
- </property>
 </configuration>
